@@ -13,7 +13,7 @@ This is a simple helper to fetch the complete content of an readable.
 
 Consult the [documentation](http://markenwerk.github.io/java-utils-text-fetcher/index.html) and  the [usage description](#usage) for further information:
 
-- [Fetching text streams](#fetching-byte-streams)
+- [Fetching text streams](#fetching-text-streams)
 - [Automatic closing of supplied streams](#automatic-closing-of-supplied-streams)
 - [Listen to fetch progress](#listen-to-fetch-progress)
 - [Handling of `null` arguments](#handling-of-null-arguments)
