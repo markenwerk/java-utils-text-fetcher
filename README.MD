@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/markenwerk/java-utils-text-fetcher.svg?branch=master)](https://travis-ci.org/markenwerk/java-utils-text-fetcher)
 [![Coverage Status](https://coveralls.io/repos/markenwerk/java-utils-text-fetcher/badge.svg?branch=master&service=github)](https://coveralls.io/github/markenwerk/java-utils-text-fetcher?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/562bcca036d0ab00160013f7/badge.svg)](https://www.versioneye.com/user/projects/562bcca036d0ab00160013f7)
+[![Dependency Status](https://www.versioneye.com/user/projects/573f0f7ece8d0e00360bd096/badge.svg)](https://www.versioneye.com/user/projects/573f0f7ece8d0e00360bd096)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-text-fetcher/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.markenwerk/utils-text-fetcher)
 [![Issues](https://img.shields.io/github/issues/markenwerk/java-utils-text-fetcher.svg)](https://github.com/markenwerk/java-utils-text-fetcher/issues)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/markenwerk/java-utils-text-fetcher/blob/master/LICENSE)
