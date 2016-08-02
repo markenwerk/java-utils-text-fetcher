@@ -50,13 +50,13 @@ This library provides the [`TextFetcher`][TextFetcher] which features three main
 TextFetcher fetcher = new BufferedTextFetcher();
 
 // copy the content of an Readable into a byte[]
-char[] characters = fetcher.fetch(inputStream);
+char[] characters = fetcher.fetch(readable);
 
 // copy the content of an Readable into a String
-String string = fetcher.read(inputStream);
+String string = fetcher.read(readable);
 
 // copy the content of an Readable into an Appendable
-fetcher.fetch(reader, writer);
+fetcher.copy(readable, appendable);
 ```
 
 ### Automatic closing of supplied streams
@@ -80,13 +80,15 @@ in.close();
 All methods optionally take a [`TextFetchProgressListener`][TextFetchProgressListener] that gets notified on various points in the lifecycle (`started`, `progressed`, `succeeded` or `failed`, `finished`) of a fetch operation. The [`IdleTextFetchProgressListener`][IdleTextFetchProgressListener] is a convenient base implementation with empty methods.
 
 ```java
-foo.setContent(new BufferedTextFetcher().fetch(
-	new FileInputStream(file),
+new BufferedTextFetcher().fetch(
+	new FileReader(inFile),
+	new FileWriter(outFile),
 	new IdleTextFetchProgressListener() {
 		public void onProgress(long charactersFetched) {
-			System.out.println(charactersFetched + " characters fetched so far.");
+			System.out.println(charactersFetched + " characters copied so far.");
 		}
 	},
+	true,
 	true
 );
 ```
