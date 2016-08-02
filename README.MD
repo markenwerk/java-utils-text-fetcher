@@ -27,7 +27,7 @@ This library is hosted in the [Maven Central Repository](https://maven-badges.he
 <dependency>
 	<groupId>net.markenwerk</groupId>
 	<artifactId>utils-text-fetcher</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 </dependency>
 ```
 
@@ -106,7 +106,7 @@ Variations of the buffered copying strategy (e.g. lazy buffer creation, threadsa
 
 [`AbstractTextFetcher`][AbstractTextFetcher] reduces all methods from the [`TextFetcher`][TextFetcher] interface to the single method `doCopy(Reader, Writer, TextFetchProgressListener)` where every parameter is guaranteed to be not `null`, and therefore greatly simplifies the implementation of new fetch strategies. [`AbstractBufferedTextFetcher`][AbstractBufferedTextFetcher] is such an implementation of the aforementioned buffering fetch strategy that handles the sequentially write-read cycles and notifies the [`TextFetchProgressListener`][TextFetchProgressListener] accordingly, but leaves the buffer allocation strategy to be specified.
 
- 
+
 [AbstractBufferedTextFetcher]:  http://markenwerk.github.io/java-utils-text-fetcher/index.html?net/markenwerk/utils/text/fetcher/AbstractBufferedTextFetcher.html
 [AbstractTextFetcher]: http://markenwerk.github.io/java-utils-text-fetcher/index.html?net/markenwerk/utils/text/fetcher/AbstractTextFetcher.html
 [BufferedTextFetcher]: http://markenwerk.github.io/java-utils-text-fetcher/index.html?net/markenwerk/utils/text/fetcher/BufferedTextFetcher.html
