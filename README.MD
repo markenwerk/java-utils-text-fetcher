@@ -27,7 +27,7 @@ This library is hosted in the [Maven Central Repository](https://maven-badges.he
 <dependency>
 	<groupId>net.markenwerk</groupId>
 	<artifactId>utils-text-fetcher</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 </dependency>
 ```
 
